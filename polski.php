@@ -12,14 +12,8 @@
     </header>
 
     <main>
-        <H1>Matematyka</H1>
-        <table border="1">
-            <tr>
-                <th>Nr</th>
-                <th>Imię</th>
-                <th>Nazwisko</th>
-                <th>Ocena</th>
-            </tr>
+        <H1>J.Polski</H1>
+        <section>
             <?php
             $polaczenie = mysqli_connect('localhost','root','','szkola');
 
@@ -29,10 +23,11 @@
 
             while ($uczen = mysqli_fetch_assoc($wynik))
 
-            echo "<tr><td>" .$uczen['ID']. "</td><td>" .$uczen['Imie']. "</td><td>" .$uczen['Nazwisko']. "</td><td>" .$uczen['Ocena']. "</td></tr>";
+            echo "<div class= 'bloczki'> Nr. " .$uczen['ID']. "<br>Imie: " .$uczen['Imie']. "<br>Nazwisko: " .$uczen['Nazwisko']. "<br>Ocena: " .$uczen['Ocena']. "</div>";
 
             mysqli_close($polaczenie);
            ?>
+           </section>
         </table>
     </main>
 

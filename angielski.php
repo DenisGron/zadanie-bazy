@@ -12,7 +12,7 @@
     </header>
 
     <main>
-        <H1>Matematyka</H1>
+        <H1>J.Angielski</H1>
         <table border="1">
             <tr>
                 <th>Nr</th>
