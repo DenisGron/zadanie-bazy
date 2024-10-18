@@ -17,13 +17,13 @@
             <?php
             $polaczenie = mysqli_connect('localhost','root','','szkola');
 
-            $dane = "SELECT * FROM uczen";
+            $dane = "SELECT * FROM polski";
 
             $wynik = mysqli_query($polaczenie, $dane);
 
-            while ($uczen = mysqli_fetch_assoc($wynik))
+            while ($polski = mysqli_fetch_assoc($wynik))
 
-            echo "<div class= 'bloczki'> Nr. " .$uczen['ID']. "<br>Imie: " .$uczen['Imie']. "<br>Nazwisko: " .$uczen['Nazwisko']. "<br>Ocena: " .$uczen['Ocena']. "</div>";
+            echo "<div class= 'bloczki'> Nr. " .$polski['ID']. "<br>Imie: " .$polski['Imie']. "<br>Nazwisko: " .$polski['Nazwisko']. "<br>Ocena: " .$polski['Ocena']. "</div>";
 
             mysqli_close($polaczenie);
            ?>
@@ -36,6 +36,7 @@
             <li><a href="index.php">Matematyka</a></li>
             <li><a href="polski.php">J.Polski</a></li>
             <li><a href="angielski.php">J.Angielski</a></li>
+            <li><a href="dodawanieoceny.php">Dodawanie ocen</a></li>
             </ul>
     </aside>
 

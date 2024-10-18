@@ -23,7 +23,7 @@
             <?php
             $polaczenie = mysqli_connect('localhost','root','','szkola');
 
-            $dane = "SELECT * FROM uczen";
+            $dane = "SELECT * FROM matematyka";
 
             $wynik = mysqli_query($polaczenie, $dane);
 
